@@ -66,7 +66,7 @@ def getValueFromEnv(KEY){
 def copyTriggeredResults(projName) {
    def classesRootPath = getValueFromEnv('CLASS_PATH')
    def coverageRootPath = "CoverageFolder"
-   def selector = new LastCompletedBuildSelector()
+   def selector = new StatusBuildSelector(true)
    def coverageReportPath = coverageRootPath + "/" + projName + "/";
    println(coverageReportPath)
    
