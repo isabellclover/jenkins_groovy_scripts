@@ -29,6 +29,7 @@ def doWork() {
 				return
 			  }
 			  copyTriggeredResults(j.fullName)		
+			}
 		}
 	}
 }
